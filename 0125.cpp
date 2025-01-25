@@ -22,7 +22,8 @@ while 반복문을 사용하는 버전도 작성해 보세요.
 
 using namespace std;
 
-int main(){
+//for문
+/*int main(){
     int a = 0;
     int sum = 0;
     cout << "정수를 입력하세요: \n";
@@ -33,5 +34,21 @@ int main(){
     }
     
     cout << "1부터 " << a << "까지의 합은 " << sum << "입니다" ;
+    return 0;
+} */
+//while문
+int main(){
+    int b;
+    int i = 0;
+    int sum = 0;
+
+    cout << "정수를 입력하세요: \n";
+    cin >> b;
+
+    while(i <= b){
+        sum += i;
+        i++;
+    }
+    cout << "1부터 " << b << "까지의 합은 " << sum << "입니다" ;
     return 0;
 }
