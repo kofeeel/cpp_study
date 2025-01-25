@@ -39,15 +39,22 @@ using namespace std;
 //while문
 int main(){
     int b;
-    int i = 0;
-    int sum = 0;
-
+    
     cout << "정수를 입력하세요: \n";
     cin >> b;
 
-    while(i <= b){
-        sum += i;
-        i++;
+    //입력값 검증
+    if(b <= 0){
+        cout << "잘못된 입력입니다. 1이상의 정수를 입력하세요\n";
+        return 0; 
+    }
+
+    int num = 1;
+    int sum = 0; 
+
+    while(num <= b){
+        sum += num;
+        num++;
     }
     cout << "1부터 " << b << "까지의 합은 " << sum << "입니다" ;
     return 0;
